@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>¿Que pasa hoy?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body onload="onLoad()">
+    <script src="script/script.js"></script>
+    <script src="script/script2.js"></script>
+    
+    <div class="contenedor">
+
+        <div id="dspnon">
+        <div id="grid">  
+            
+            <div class="tarjeta">
+            <div id="localidad"></div>
+            <div id="temperatura"></div>
+            <div id="descripcion"></div>
+            <div class="ord p_clim"><p>Presion:</p><div id="presion"></div></div>
+            <div class="ord p_clim"><p>Humedad:</p><div id="humedad"></div></div>
+            <div id="fecha"></div>
+            </div>
+
+                <div class="tarjeta">
+                    <div class="ord"><h2>Bitcoin Hoy</h2><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-currency-bitcoin" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M6 6h8a3 3 0 0 1 0 6a3 3 0 0 1 0 6h-8" />
+                        <line x1="8" y1="6" x2="8" y2="18" />
+                        <line x1="8" y1="12" x2="14" y2="12" />
+                        <line x1="9" y1="3" x2="9" y2="6" />
+                        <line x1="13" y1="3" x2="13" y2="6" />
+                        <line x1="9" y1="18" x2="9" y2="21" />
+                        <line x1="13" y1="18" x2="13" y2="21" />
+                      </svg></div>
+               <div class="ord p_btc"><p>USD: $<div id="preciousd"></div></p></div> 
+               <div class="ord p_btc"><p>EUR: $<div id="precioeur"></div></p></div>
+               <div class="ord p_btc"><p>GBP: $<div id="preciogbp"></div></p></div>
+                </div>
+
+            </div>
+        </div>
+    
+
+
+
+    </div>
+
+    <div id="loader" class="loader">Loading...</div>
+</body>
+</html>
